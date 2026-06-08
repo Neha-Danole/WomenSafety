@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeHer - Safety Tips</title>
+    <style>
+        /* Modern Reset & Typography */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        body {
+            background: #0f0c1b; /* Deep Purple Theme */
+            color: #f1f1f1;
+            min-height: 100vh;
+            padding-bottom: 40px;
+        }
+
+        /* Colourful Gradient Navbar */
+        nav {
+            background: linear-gradient(135deg, #ff007f, #ff5e00);
+            padding: 15px 40px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(255, 0, 127, 0.4);
+        }
+
+        nav h1 {
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Container Layout */
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        /* Vibrant Premium Cards */
+        .card {
+            background: #191428;
+            padding: 25px 30px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Colorful Left Borders for 6 unique tips */
+        .card:nth-of-type(1) { border-left: 5px solid #00f2fe; } /* Teal */
+        .card:nth-of-type(2) { border-left: 5px solid #ff5e00; } /* Orange */
+        .card:nth-of-type(3) { border-left: 5px solid #ff007f; } /* Neon Pink */
+        .card:nth-of-type(4) { border-left: 5px solid #00ff66; } /* Lime Green */
+        .card:nth-of-type(5) { border-left: 5px solid #ffe600; } /* Yellow */
+        .card:nth-of-type(6) { border-left: 5px solid #b537ff; } /* Purple */
+
+        /* Hover effect to make cards feel interactive */
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 30px rgba(255, 0, 127, 0.15);
+            background: #201a33;
+        }
+
+        /* Card Headings with Cross-Browser Gradient Compatibility */
+        .card h3 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            background: linear-gradient(45deg, #ffffff, #d1c7bd);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+        }
+
+        /* Unique heading highlight matchers on hover */
+        .card:nth-of-type(1):hover h3 { background: linear-gradient(45deg, #ffffff, #00f2fe); -webkit-background-clip: text; background-clip: text; }
+        .card:nth-of-type(2):hover h3 { background: linear-gradient(45deg, #ffffff, #ff5e00); -webkit-background-clip: text; background-clip: text; }
+        .card:nth-of-type(3):hover h3 { background: linear-gradient(45deg, #ffffff, #ff007f); -webkit-background-clip: text; background-clip: text; }
+        .card:nth-of-type(4):hover h3 { background: linear-gradient(45deg, #ffffff, #00ff66); -webkit-background-clip: text; background-clip: text; }
+        .card:nth-of-type(5):hover h3 { background: linear-gradient(45deg, #ffffff, #ffe600); -webkit-background-clip: text; background-clip: text; }
+        .card:nth-of-type(6):hover h3 { background: linear-gradient(45deg, #ffffff, #b537ff); -webkit-background-clip: text; background-clip: text; }
+
+        /* Card Paragraph Texts */
+        .card p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #b3adc2;
+        }
+
+        /* Mobile Responsiveness */
+        @media(max-width: 480px) {
+            .container { margin: 20px auto; }
+            .card { padding: 20px; }
+            .card h3 { font-size: 19px; }
+            .card p { font-size: 15px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <h1>Safety Tips</h1>
+    </nav>
+
+    <div class="container">
+
+        <div class="card">
+            <h3>📍 Share Live Location</h3>
+            <p>
+                Share your real-time tracking coordinates with close friends or trusted family contacts during travel via apps like WhatsApp, Google Maps, or native SOS settings.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🌙 Avoid Lonely Areas</h3>
+            <p>
+                Stick to well-lit main routes and avoid isolated shortcuts, dark alleys, or completely unpopulated public spaces during late-night travel.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>📞 Save Emergency Numbers</h3>
+            <p>
+                Keep essential national helpline systems (like 112 or 1091) and personal priority emergency speed-dials readily accessible on your phone's lock screen.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🎧 Stay Aware of Your Surroundings</h3>
+            <p>
+                Avoid wearing noise-canceling headphones or staring down constantly at your phone while walking alone. Keeping your eyes and ears open helps you spot anomalies early.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🧠 Trust Your Instincts</h3>
+            <p>
+                If a person, a vehicle, or a specific environment makes you feel uneasy or uncomfortable, don't worry about being polite. Leave the situation immediately.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🔑 Keep Keys Ready & Walk Confidently</h3>
+            <p>
+                Have your house or car keys out and ready in your hand *before* you reach your door or vehicle. Walk with a confident, steady pace to signal that you are alert.
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>

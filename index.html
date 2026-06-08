@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeHer - Women Safety Alert</title>
+    <style>
+        /* Modern Reset & Typography */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        body {
+            /* Rich, deep midnight purple instead of basic dark grey */
+            background: #0f0c1b; 
+            color: #f1f1f1;
+            overflow-x: hidden;
+        }
+
+        /* Colourful Gradient Navbar */
+        nav {
+            background: linear-gradient(135deg, #ff007f, #ff5e00);
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 20px rgba(255, 0, 127, 0.4);
+        }
+
+        nav h1 {
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        /* Hover effect for Nav Links */
+        nav ul li a:hover {
+            color: #ffe600; 
+            text-shadow: 0 0 10px rgba(255, 230, 0, 0.6);
+        }
+
+        /* Hero Section with Glowing Background Grid Effect */
+        .hero {
+            height: 75vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: radial-gradient(circle, rgba(255, 0, 127, 0.15) 0%, rgba(15, 12, 27, 0) 70%);
+            padding: 20px;
+        }
+
+        /* Electric Gradient Text for Heading */
+.hero h2 {
+    /* 1. Define the colourful background */
+    background: linear-gradient(45deg, #00f2fe, #ff007f);
+    
+    /* 2. Clip the background to the text (Cross-Browser support) */
+    -webkit-background-clip: text; /* Target Safari, Chrome, Edge, iOS */
+    background-clip: text;         /* Standard property for Firefox and future spec */
+    
+    /* 3. Make the default text color invisible so the background shows through */
+    -webkit-text-fill-color: transparent; /* Webkit override */
+    color: transparent;                    /* Standard fallback */
+}
+
+        .hero p {
+            margin-bottom: 40px;
+            font-size: 22px;
+            color: #d1c7bd;
+            letter-spacing: 1px;
+        }
+
+        /* High-Visibility Pulse SOS Button */
+        .sos-btn {
+            background: linear-gradient(135deg, #ff0844 0%, #ffb199 100%);
+            color: white;
+            border: none;
+            padding: 25px 60px;
+            font-size: 26px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 0 30px rgba(255, 8, 68, 0.8);
+            animation: pulse 1.2s infinite;
+            transition: transform 0.2s;
+        }
+
+        .sos-btn:active {
+            transform: scale(0.95);
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 25px rgba(255, 8, 68, 0.7);
+            }
+            50% {
+                transform: scale(1.06);
+                /* Intense neon aura expands outwards */
+                box-shadow: 0 0 45px rgba(255, 8, 68, 0.9), 0 0 20px rgba(255, 177, 153, 0.4);
+            }
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 25px rgba(255, 8, 68, 0.7);
+            }
+        }
+
+        /* Stylish Card-Style About Section */
+        .about {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 40px;
+            text-align: center;
+            background: #191428;
+            border-radius: 20px;
+            border: 1px solid rgba(0, 242, 254, 0.2);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+        }
+
+        .about h2 {
+            font-size: 32px;
+            margin-bottom: 15px;
+            color: #00f2fe;
+        }
+
+        .about p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #c2bed1;
+        }
+
+        /* Matching Vibrant Footer */
+        footer {
+            background: linear-gradient(135deg, #ff5e00, #ff007f);
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+            font-weight: 600;
+            box-shadow: 0 -4px 20px rgba(255, 0, 127, 0.2);
+        }
+
+        /* Responsive Design for Mobile Devices */
+        @media(max-width: 768px){
+            nav {
+                flex-direction: column;
+                gap: 15px;
+                padding: 20px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+
+            .hero h2 {
+                font-size: 38px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+
+            .sos-btn {
+                padding: 20px 45px;
+                font-size: 20px;
+            }
+
+            .about {
+                margin: 20px;
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <h1>SafeHer</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="emergency.html">Emergency</a></li>
+            <li><a href="tips.html">Safety Tips</a></li>
+            
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <h2>Your Safety Matters</h2>
+        <p>Stay Alert. Stay Safe.</p>
+
+        <button class="sos-btn" onclick="activateSOS()">
+            EMERGENCY SOS
+        </button>
+    </section>
+
+    <section class="about">
+        <h2>About SafeHer</h2>
+        <p>
+            SafeHer is a women safety alert website developed using HTML,
+            CSS, and JavaScript. It provides emergency support features,
+            safety tips, and quick access to helpline numbers.
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2026 SafeHer | Women Safety Alert System</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
